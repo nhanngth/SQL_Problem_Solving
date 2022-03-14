@@ -1,2 +1,2 @@
-# SQL_Problem_Solving
+# SQL Problem Solving
 Some queries for interesting SQL problems that I found on the Internet
