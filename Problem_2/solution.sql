@@ -50,3 +50,4 @@ SELECT
 FROM t3
 GROUP BY product_id, price
 ORDER BY product_id, total_revenue DESC
+
