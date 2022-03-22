@@ -6,13 +6,13 @@ WITH
     SUM(quantity_ordered) AS total_quantity
   FROM sales_table
   GROUP BY
-    product_id, ordered_at),
+    product_id, ordered_at),              -- sum duplicated records
   min_date AS (
   SELECT
     product_id,
     MIN(updated_at) AS min_updated
   FROM prices_table
-  GROUP BY product_id),
+  GROUP BY product_id),                   -- get earliest update log
   t1 AS (
   SELECT
     s.product_id,
